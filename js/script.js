@@ -4,15 +4,13 @@ new Vue(
     {
         el: '#app',
         data: {
-            emails:[
-
-            ],//array vuoto che verra popolato dalla funzione!
-            check: false,
+            emails:[],//array vuoto che verra popolato dalla funzione!
+            
         },
         created(){
             this.getemail();// richiamando la funzione colleghiamo la chiamata con array
             //altrimenti possiamo creare un bottone dove al click inseriremo modifichermo il dato che verra eseguio nel html!
-            this.arrayFull();
+            // this.arrayFull();
         },
         methods: {
             getemail: function () {
@@ -24,15 +22,11 @@ new Vue(
                         //ps: nn e ancora visibile dal array "array e vuoto"
                         
                     });
+                    
                 };
+                
             },
-            arrayFull: function () {
-                if (this.emails.length > 11) {
-                    this.check = false;
-                } else {
-                    this.check = true;
-                }
-            }
+            
         }    
     });
 

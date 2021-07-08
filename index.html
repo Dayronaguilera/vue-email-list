@@ -27,8 +27,9 @@
     <!-- collegamento con vue.js -->
     <div id="app">
         <div class="container">
-            <ul v-for="email in emails">
-                <li v-if="check">
+            <h1 class="mt-5">Email generate:</h1>
+            <ul class="mt-2">
+                <li  v-for="email in emails" v-if="emails.length === 10">
                     {{email}}
                 </li>
             </ul>
